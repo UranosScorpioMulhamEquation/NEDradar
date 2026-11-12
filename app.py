@@ -21,7 +21,7 @@ swe.set_ephe_path(EPHE_PATH)
 # 1. جداول علم الحرف والدرجات التفصيلية للأبراج
 # ==========================================
 ABJAD_DICT = {
-    'ا': 1, 'أ': 1, 'إ': 1, 'آ': 1,
+    'ا': 1, 'أ': 1, 'إ': 1, 'آ': 1, 'ء': 1,
     'ب': 2,
     'ج': 3,
     'د': 4,
@@ -71,8 +71,6 @@ def calculate_text_value(text):
     total = 0
     text = text.strip()
     for char in text:
-        if char in ['ء']:
-            continue
         if char in ABJAD_DICT:
             total += ABJAD_DICT[char]
     return total
