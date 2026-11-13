@@ -7,6 +7,7 @@ import pytz
 import streamlit as st
 import swisseph as swe
 from timezonefinder import TimezoneFinder
+import uuid
 # ==================== 1. Security (Fixed) ====================
 KEY_FILE = "license.key"
 
